@@ -1,0 +1,597 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@700&family=Raleway:wght@400;700&display=swap');
+
+/* 
+  font-family: 'Oswald', sans-serif;
+font-family: 'Raleway', sans-serif;
+
+  color values:
+    #96746b
+    #c7a17a
+    #312a26
+    #fff
+    #f2f2f2
+    #19100f */
+
+
+
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  border: 0;
+} 
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6{
+  font-family: 'Oswald', sans-serif;
+}
+
+p{
+  font-family: 'Raleway', sans-serif;
+}
+
+.wrapper{
+  width: 100%;
+}
+
+/* header section 1 */
+.nav{
+  /* border: 5px solid red; */
+
+  width: 85%;
+  overflow: auto;
+  margin: 1em auto;
+
+}
+
+.nav h1 a{
+  /* border: 3px dashed darkgoldenrod; */
+
+  float: left;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #96746b;
+}
+
+.nav ul{
+  float: right;
+  margin: 1em auto;
+}
+
+.nav ul li{
+  /* border: 3px dashed blue; */
+
+  display: inline;
+  float: left;
+  text-transform: capitalize;
+  font-family: 'Raleway', sans-serif;
+  
+}
+
+.nav ul li a{
+  /* border: 3px dashed darkgoldenrod; */
+
+  text-decoration: none;
+  margin-left: 1em;
+  color: #312a26;
+  font-weight: 700;
+
+}
+
+/* banner section */
+.banner{
+  /* border: 5px solid red; */
+  height:670px ;
+
+  background-image: url(../images/banner-bg.jpg);
+  background-position: center;
+  background-size: cover;
+  position: relative;
+
+}
+
+.banner-text{
+  /* border:3px dashed goldenrod; */
+
+  position: absolute;
+  top: 50%;
+  transform: translate(0,-50%);
+  /* transform:translate(0,0)
+    1st value=horisontal adjustment
+    2nd=vertival
+  */
+  left:7.5%;
+
+}
+
+.banner-text h2{
+  color:#c7a17a ;
+  text-transform: uppercase;
+  font-size: 4em; 
+}
+
+.banner-text h2 span{
+  color:#96746b ;
+  text-transform: uppercase;
+}
+
+.banner-text p{
+  color: #fff;
+}
+
+.banner-text a{
+  background-color: #312a26;
+  color: #fff;
+  text-decoration: none;
+  font-family: 'Raleway', sans-serif;
+  display: inline-block;
+  padding: 1em;
+  margin-top: 3em;
+  font-weight: 700;
+}
+
+
+/* ads section */
+
+.ads{
+  /* border: 5px solid red;  */
+
+  width: 85%;
+  margin: 4em auto;
+  overflow: auto;
+
+}
+
+.ads-items{
+  /* border: dashed blue; */
+
+  height: 350px;
+  width: 49%;
+  background-position:center ;
+  background-size: cover;
+  float: left;
+  position: relative;
+}
+
+#SeasonalCoffeeFlavours{
+  /* border: 3px solid goldenrod; */
+  
+  margin-right: 2%;
+  background-image: url(../images/ads-img1.jpg);
+  
+  
+}
+
+#CoffeeBundlePackages{
+  /* border: 3px solid green; */
+  
+  background-image: url(../images/ads-img2.jpg);
+  
+}
+
+.ads-text {
+  /* border: 3px dotted orchid; */
+
+  width: 45%;
+  color: #fff;
+  text-transform: uppercase;
+  position: absolute;
+  top: 50%;
+  display: inline-block; 
+  transform:translate(0%,-50%) ; 
+  left: 10%;
+
+}
+
+.ads-text h3{
+  color: #fff;
+  line-height: 1.2em;
+  font-size: 2em;
+  text-shadow: 3px 3px 6px #312a26;
+}
+
+.ads-text a{
+  color: #fff;
+  text-transform: uppercase;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 700;
+  display: inline-block;
+  margin-top: 1em;
+}
+
+/* end of ads */
+
+/* merchandise section */
+
+.merch{
+  /* border: 5px solid red; */
+  width: 85%;
+  margin: 4em auto;
+  
+}
+
+
+
+.section-header{
+  /* border: 3px dashed blue; */
+  text-align: center;
+  margin-bottom: 2em;
+  
+}
+
+.section-header span{
+  font-family: 'Raleway', sans-serif;
+  font-style: italic;
+  color: #c7a17a;
+  font-weight: 500;
+}
+
+.section-header h2{
+  color: #312a26;
+  text-transform: uppercase;
+
+}
+
+.section-header hr{
+  background-color: #c7a17a; 
+  height: 2px;
+  width: 25%;
+  margin: auto;
+}
+
+.merch-gallery{
+  /* border: 4px solid pink; */
+  overflow: auto;
+}
+
+.merch-gallery img{
+  width: 100%;
+  height: 350px;
+  object-fit: cover;
+  /* to fix stretched image */
+
+}
+
+.merch-items{
+  float: left;
+  width: 24%;
+ margin-right:1.33%;
+}
+
+.merch-items:nth-child(4),
+.merch-items:nth-child(8){
+  margin-right: 0%;
+}
+
+/* end of merchandise section */
+
+/* discount section */
+.discount{
+  /* border: 5px solid red; */
+  height: 350px;
+  width: 85%;
+  margin: 4em auto;
+  background-image: url(../images/discount-img.jpg);
+  background-position: center;
+  background-size: cover;
+  position: relative;
+}
+
+.discount-text{
+  /* border: 3px dashed blue; */
+
+  text-align: center;
+  color: #fff;
+  position: absolute;
+  top:50%;
+  left:50%;
+  transform: translate(-50%,-50%);
+ 
+}
+
+.discount-text span{
+  font-family: 'Raleway', sans-serif;
+  font-style: italic;
+  text-shadow: 3px 3px 6px #312a26;
+  
+}
+
+.discount-text h2{
+  text-transform: uppercase;
+  font-size: 2em;
+  text-shadow: 3px 3px 6px #312a26;
+
+}
+
+.discount-text a{
+  color: #312a26;
+  font-family: 'Raleway', sans-serif;
+  background-color: rgba(225,225,225,.5);
+  text-decoration: none;
+  text-transform: capitalize;
+  display: inline-block;
+  padding: 1em;
+  margin-top: 1em;
+  font-weight: 700;
+}
+/*  end of discount section*/
+
+/* sale section */
+.merch-sale{
+  /* border: 5px solid red; */
+
+  width: 85%;
+  margin: 4em auto;
+}
+
+/* end of sale section */
+
+/* ads2 */
+.ads2{
+  /* border: 5px solid red ; */
+  width: 85%;
+  margin: 4em auto;
+  overflow: auto;
+}
+
+
+#varieties{
+  background-image: url(../images/ads-img3.jpg); 
+  background-position: center;
+  background-size: cover;
+  margin-right: 2%;
+}
+
+#favorite{
+  background-image:url(../images/ads-img4.jpg) ;
+  background-position: center;
+  background-size: cover;
+}
+
+#best-sellers{
+  background-image: url(../images/ads-img5.jpg);
+  background-position: center;
+  background-size: cover;
+  margin-right: 2%;
+  margin-top: 2%;
+
+}
+
+#more{
+  background-image:url(../images/ads-img6.jpg) ;
+  background-position: center;
+  background-size: cover;
+  margin-top: 2%;
+} 
+
+
+/* end of ads2 more */
+
+/* reservation form */
+
+ .reservation{
+  /* border: 5px solid red; */
+  width: 85%;
+  margin: 4em auto;
+  overflow: auto;
+ }
+
+.reservation section-header{
+  /* border: 5px solid greenyellow; */
+}
+
+form{
+  /* border: 3px dashed orchid; */
+  overflow: auto;
+  display: block;
+}
+
+.form-group{
+  /* border: 3px dotted lightblue; */
+
+  background-color:  #f2f2f2; 
+  border-radius: .5%;
+  width: 49%;
+  height: 650px;
+  float: left;
+  margin-right: 2%;
+  padding: 20px;
+  line-height: 2em;
+
+}
+
+.form-group:nth-child(2){
+  margin-right: 0%;
+}
+
+form label,
+form textarea,
+form select,
+form input{
+  font-family: 'Raleway', sans-serif;
+  width: 100%;
+  padding: 1em;
+}
+
+form label{
+  font-weight: 700;
+  padding: 0;
+}
+
+.rest-time{
+  text-align: center;
+}
+
+.rest-time input{
+  width: 2.5%;
+  
+}
+
+.res-agreement input{
+  width: 2.5%;
+ 
+}
+
+form p{
+  margin: 1em;
+  text-align: center;
+  font-weight: 700;
+}
+
+form h3::after{
+  /* Pseudo element 
+  -is used to style specified parts of an element
+
+  ex
+  -inset content before or after the element
+  */
+  content: "";
+  display: block;
+  height: 30px;
+  width: 150px;
+  background-image: url(../images/reservation-cards.png);
+  background-size: contain;
+  background-repeat:no-repeat;
+  margin: auto;
+  
+}
+
+form h3{
+  text-align: center;
+  text-transform: uppercase;
+}
+
+#submit{
+  background-color: #c7a17a;
+  width: 100%;
+  padding: auto;
+  font-weight: 700;
+}
+
+/* end of reservation form */
+
+/* footer info section */
+.footer{
+  /* border: 5px solid red; */
+
+  background-image: url(../images/footer-img.jpg);
+  background-position: center;
+  background-size: cover;
+  overflow: auto;
+
+}
+
+.footer-contents{
+  /* border: 3px dashed lightblue; */
+
+  overflow: auto;
+  width: 85%;
+  margin:2em auto;
+  
+}
+
+.footer-contents :nth-child(4){
+  margin-right: 0%;
+}
+
+.footer-widget{
+  /* border: 3px dashed greenyellow; */
+
+  width:24%;
+  margin-right: 1.33%;
+  float: left;
+  padding-top: 0%;
+}
+
+.footer h3{
+  color: #fff;
+  margin-bottom: 1em;
+  text-transform: uppercase;
+  text-shadow: 3px 3px 6px #312a26;
+  
+}
+
+.footer h4{
+  color: #fff;
+  text-transform: capitalize;
+  text-shadow: 3px 3px 6px #312a26;
+}
+
+.footer p{
+  color: #c7a17a;
+  text-shadow: 3px 3px 6px #312a26;
+}
+
+.footer table{
+  color: #fff;
+  font-family: 'Raleway', sans-serif;
+  width: 100%;
+}
+
+#search{
+  background-color: #c7a17a;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 700;
+  
+}
+
+.footer-form *{
+  width: auto;
+  display: inline-block;
+  /* this will work in case of inline block */
+
+}
+
+/* end of footer info section */
+
+/* footer social section*/
+.footer-social{
+  /* border: 5px solid red; */
+
+  overflow: auto;
+  background-color:#19100f;
+  padding: 1em 7.5%;
+  color: #f2f2f2;
+
+
+}
+
+
+.social-widget{
+  /* border: 3px dashed blue; */
+
+  overflow: auto;
+ float: left; 
+ width: 33%;
+ text-align: center
+}
+
+.social-widget h3{
+  text-transform: uppercase;
+}
+
+.social-widget img{
+  height: 20px;
+}
+
+/* top */
+.top{
+   height: 3em; 
+  background-color: #19100f;
+  color: #fff;
+  padding: 5px;
+  text-decoration: none;
+  font-weight: 700;
+  font-family: 'Raleway', sans-serif;
+position: fixed;
+bottom: 0;
+right: 4%;
+
+} 
+/* end of to */
+/* end of footer social section */
